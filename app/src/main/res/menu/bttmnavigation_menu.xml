@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/info"
+        android:icon="@drawable/ic_write"
+        android:title="Info"
+        >
+    </item>
+    <item android:id="@+id/addPhoto"
+        android:icon="@drawable/ic_baseline_add_a_photo_24"
+        android:title="Add Photo"
+        >
+    </item>
+    <item android:id="@+id/review"
+        android:icon="@drawable/ic_review"
+        android:title="Reviews"
+        >
+    </item>
+</menu>

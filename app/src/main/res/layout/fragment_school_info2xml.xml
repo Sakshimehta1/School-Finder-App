@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragInfo"
+    android:background="@drawable/circle_back_light"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingHorizontal="0dp"
+    android:paddingVertical="30dp"
+    tools:context=".fragment_school_info2xml"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/crdview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:elevation="15dp"
+        app:cardCornerRadius="10dp"
+        android:paddingHorizontal="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="20dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="0dp"
+                    android:src="@drawable/ic_baseline_check_circle_24"
+                    app:tint="@color/green" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" STEP 2"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginBottom="30dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="4dp"
+                    android:background="@color/colorPrimaryDark"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimaryDark"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"/>
+            </LinearLayout>
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_marginBottom="50dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginHorizontal="20dp"
+                        app:boxBackgroundColor="@color/white"
+                        android:textColorHint="#000"
+                        app:hintAnimationEnabled="true"
+                        app:helperTextTextColor="@color/black"
+                        app:startIconTint="@color/black"
+                        app:startIconDrawable="@drawable/ic_spellcheck_24px"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu">
+
+                        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/autoadm"
+                            android:hint=" Admission open"
+                            android:focusable="false"
+                            android:cursorVisible="false"
+                            android:textColor="@color/black"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:visibility="visible"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            app:boxBackgroundColor="@color/white"
+                            android:textColorHint="#000"
+                            app:hintAnimationEnabled="true"
+                            app:helperTextTextColor="@color/black"
+                            app:startIconTint="@color/black"
+                            app:startIconDrawable="@drawable/ic_people_24px"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu">
+
+                            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                                android:id="@+id/gradesfrom"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Grades From"
+                                android:focusable="false"
+                                android:cursorVisible="false"
+                                android:inputType="textAutoComplete"
+                                android:textColor="@color/black"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            app:boxBackgroundColor="@color/white"
+                            android:textColorHint="#000"
+                            app:hintAnimationEnabled="true"
+                            app:helperTextTextColor="@color/black"
+                            app:startIconTint="@color/black"
+                            app:startIconDrawable="@drawable/ic_people_24px"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu">
+
+                            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                                android:id="@+id/gradeto"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:cursorVisible="false"
+                                android:hint="To"
+                                android:inputType="textAutoComplete"
+                                android:textColor="@color/black"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/strength"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginHorizontal="20dp"
+                        app:boxBackgroundColor="@color/white"
+                        android:textColorHint="#000"
+                        app:hintAnimationEnabled="true"
+                        app:helperTextTextColor="@color/black"
+                        app:startIconTint="@color/black"
+                        app:startIconDrawable="@drawable/ic_people_24px"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:hint="Strength of Students"
+                            android:textColor="@color/black" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginHorizontal="20dp"
+                        app:boxBackgroundColor="@color/white"
+                        android:textColorHint="#000"
+                        app:hintAnimationEnabled="true"
+                        app:helperTextTextColor="@color/black"
+                        app:startIconTint="@color/black"
+                        app:startIconDrawable="@drawable/ic_school_24px"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu">
+
+                        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                            android:id="@+id/board"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Board"
+                            android:focusable="false"
+                            android:cursorVisible="false"
+                            android:inputType="textAutoComplete"
+                            android:textColor="@color/black"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/establishyear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginHorizontal="20dp"
+                        app:boxBackgroundColor="@color/white"
+                        android:textColorHint="#000"
+                        app:hintAnimationEnabled="true"
+                        app:helperTextTextColor="@color/black"
+                        app:startIconTint="@color/black"
+                        app:startIconDrawable="@drawable/establish_24px"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:hint="Establishment Year"
+                            android:textColor="@color/black" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginHorizontal="20dp"
+                        app:boxBackgroundColor="@color/white"
+                        android:textColorHint="#000"
+                        app:hintAnimationEnabled="true"
+                        app:helperTextTextColor="@color/black"
+                        app:startIconTint="@color/black"
+                        app:startIconDrawable="@drawable/ic_baseline_school_name"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu">
+
+                        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                            android:id="@+id/schooltype"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:cursorVisible="false"
+                            android:hint="School Type"
+                            android:inputType="textAutoComplete"
+                            android:textColor="@color/black"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/crdview"
+        android:layout_alignLeft="@+id/crdview"
+        android:layout_alignRight="@+id/crdview"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginBottom="50dp"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+    <ProgressBar
+        android:id="@+id/progress2"
+        android:padding="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:indeterminate="true"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

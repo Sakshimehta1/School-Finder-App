@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imgview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bitimagedown"/>
+    <TextView
+        android:id="@+id/schname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S.N Sidheshwar Sr.Sec Public School"
+        android:layout_toRightOf="@+id/imgview"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:paddingHorizontal="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/schname"
+        android:id="@+id/schloc"
+        android:text="Sector-9A Gurgaon , Haryana"
+        android:layout_toRightOf="@+id/imgview"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:paddingTop="5dp"
+        android:paddingHorizontal="20dp"/>
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/schloc"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/imgview"
+        android:src="@drawable/baseline_grade_black_24dp"
+        app:tint="#E1CA00" />
+
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/schloc"
+        android:layout_alignBaseline="@+id/star"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/star"
+        android:text="4.5"
+        android:textColor="@color/black" />
+    <ImageView
+        android:id="@+id/bookmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/schloc"
+        android:layout_marginTop="6dp"
+        android:layout_marginHorizontal="20dp"
+        android:src="@drawable/baseline_bookmark_border_black_24dp"/>
+    <ImageView
+        android:id="@+id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/bookmark"
+        android:layout_below="@id/schloc"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="0dp"
+        android:src="@drawable/baseline_favorite_border_black_24dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/like"
+        android:layout_below="@id/schloc"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_share_24px"/>
+</RelativeLayout>
